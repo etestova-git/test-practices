@@ -1,5 +1,5 @@
 # Best Test Practices
-![](./image.png)
+![](https://github.com/etestova-git/test-practices/blob/main/Screenshot%202025-06-27%20at%2021.33.18.png)
 
 **Unit testing** is a type of automated testing. You can write unit tests without
 using TDD or BDD, just by writing the tests after the production code.
