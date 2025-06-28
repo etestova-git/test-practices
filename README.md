@@ -1,6 +1,6 @@
 # QA Engineer Best Practices
 
-![](screenshots/Screenshot 2025-06-27 at 21.33.18.png)
+![](https://github.com/etestova-git/test-practices/blob/main/screenshots/Screenshot%202025-06-27%20at%2021.33.18.png)
 
 ## Sections
 - Manual Testing
