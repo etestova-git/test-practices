@@ -9,12 +9,6 @@
 - Recommended Tools
 - Career Development
 
-## Contribution
-We welcome pull requests that improve this repository or add missing topics.
-```
-
----
-
 ### 🧪 test-case-design.md
 ```markdown
 # Test Case Design Best Practices
