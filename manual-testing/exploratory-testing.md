@@ -1,0 +1,3 @@
+# Exploratory Testing
+
+- Use time-boxed exploratory sessions...

@@ -1,0 +1,3 @@
+# Severity vs Priority
+
+- **Severity**: impact on system...

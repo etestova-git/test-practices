@@ -1,0 +1,3 @@
+# QA Career Paths
+
+- Manual QA Engineer...

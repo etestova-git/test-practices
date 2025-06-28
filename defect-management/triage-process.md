@@ -1,0 +1,3 @@
+# Bug Triage Process
+
+- Regular triage meetings with QA...

@@ -1,0 +1,3 @@
+# API Testing Best Practices
+
+- Validate response status codes...
