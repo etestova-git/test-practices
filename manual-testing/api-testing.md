@@ -46,6 +46,7 @@ It is a set of rules that allows one software application to interact with anoth
 
 **How to Mock an API in Postman**
 
+[How to Mock](https://github.com/etestova-git/test-practices/blob/main/manual-testing/how_to_mock_API_in_Postman.md)
 
 ---
 
