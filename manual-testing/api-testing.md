@@ -1,5 +1,96 @@
 # API Testing Best Practices
 
+# 🔍 POISED Principle for API Testing
+
+The **POISED** principle is a guideline for conducting thorough API testing. It stands for:
+
+---
+
+## 🅿️ P — Performance
+
+- **What to Check:**
+  - Response time under normal and high load
+  - Latency and throughput
+  - Scalability and resource usage
+
+- **Tools:**
+  - Postman (for basic performance)
+  - JMeter, k6, Gatling (for advanced load testing)
+
+- **Goal:** Ensure the API performs reliably under expected conditions.
+
+---
+
+## 🅾️ O — Output
+
+- **What to Check:**
+  - Accuracy and correctness of response data
+  - Schema and data format (e.g., JSON, XML)
+  - Content completeness and field validation
+
+- **Goal:** Verify that API responses contain valid and expected data.
+
+---
+
+## 🇮 I — Interoperability
+
+- **What to Check:**
+  - Cross-platform compatibility (web, mobile, 3rd party)
+  - Standard compliance (RESTful conventions, MIME types)
+
+- **Goal:** Confirm that the API works across various platforms and systems.
+
+---
+
+## 🇸 S — Security
+
+- **What to Check:**
+  - Authentication (e.g., API key, OAuth)
+  - Authorization (user roles, permissions)
+  - HTTPS usage and data encryption
+  - Input validation to prevent injection attacks
+
+- **Goal:** Ensure API access and data are protected against misuse.
+
+---
+
+## 🇪 E — Error Handling
+
+- **What to Check:**
+  - Proper use of status codes (e.g., 400, 403, 500)
+  - Clear and helpful error messages
+  - Graceful degradation and fallback logic
+
+- **Goal:** Help users and developers understand and recover from errors.
+
+---
+
+## 🇩 D — Data Integrity
+
+- **What to Check:**
+  - Correct execution of CRUD operations
+  - Data consistency across endpoints
+  - Validations on data creation and updates
+
+- **Goal:** Maintain accurate, reliable, and synchronized data.
+
+---
+
+## ✅ Summary Table
+
+| Letter | Aspect          | Key Focus                                      |
+|--------|------------------|------------------------------------------------|
+| P      | Performance       | Response time, latency, load handling         |
+| O      | Output            | Data correctness, schema, formatting          |
+| I      | Interoperability  | Cross-platform support, standards compliance  |
+| S      | Security          | Auth, encryption, secure communication        |
+| E      | Error Handling    | HTTP codes, error clarity                     |
+| D      | Data Integrity    | CRUD validity, consistency, sync              |
+
+---
+
+> Use the **POISED** principle as a checklist to ensure your API is fast, reliable, secure, and robust in all scenarios.
+
 # 🔍 API Testing Plan: GET /api/users/{userId}
 
 This document outlines a comprehensive testing strategy for the `GET /api/users/{userId}` endpoint using **Postman**, covering:
