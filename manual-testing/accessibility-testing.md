@@ -1,3 +1,0 @@
-# Accessibility Testing
-
-- Use screen readers...
