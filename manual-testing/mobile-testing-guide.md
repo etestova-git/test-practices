@@ -1,13 +1,15 @@
 
-# 📱 Mobile Testing Guide for QA Engineers
+# 📱 Mobile Testing Guide
 
-This page provides a comprehensive overview of best practices for mobile app testing, including device selection, the role of emulators and simulators, core testing areas, and using Charles Proxy for traffic inspection.
+This page provides an overview of best practices for mobile app testing, 
+including device selection, 
+the role of emulators and simulators, 
+core testing areas, 
+and using Charles Proxy.
 
 ---
 
-## 🔍 1. How to Choose Mobile Devices for Testing
-
-Choosing the right mobile devices is critical for maximizing coverage and ensuring a high-quality user experience across platforms.
+## 🔍 1. How to Choose Mobile Devices
 
 ### ✅ Key Criteria:
 - **OS Versions:** Test across different major versions of Android and iOS (e.g., iOS 17, Android 14, etc.)
@@ -17,20 +19,17 @@ Choosing the right mobile devices is critical for maximizing coverage and ensuri
 - **Manufacturers & Brands:** Samsung, Google Pixel, Xiaomi, OnePlus, iPhone (multiple generations)
 - **Network Types:** Test over WiFi, 3G, 4G, 5G to simulate real usage
 
-### 📊 Suggested Approach:
-- Use tools like **Firebase Test Lab**, **BrowserStack**, or **Sauce Labs** to access a wide variety of real devices in the cloud.
-- Maintain a **device matrix** in your test plan.
-
-### 📱 Compatibility Testing (The Device Matrix)
+### 📱 Compatibility Testing
 - **Device Coverage:** Define a "device matrix" in collaboration with the Product Manager based on analytics. Include top devices like iPhones, Samsung Galaxy, and Google Pixel with OS versions such as iOS 15–17 and Android 12–14.
 - **Screen Size & Resolution:** Ensure no layout issues on small and large screens.
 - **Execution Strategy:** Combine physical devices with cloud testing farms (e.g., Sauce Labs, BrowserStack) for broader coverage.
 
 ---
+- Cloud tools of real devices **Firebase Test Lab**, **BrowserStack**, **Sauce Labs**.
+- Maintain a **device matrix** for the product or a fiture.
+---
 
 ## 🧪 2. Emulators vs. Simulators
-
-Understanding the difference between emulators and simulators is crucial for selecting the right testing environment.
 
 ### 💻 Emulators (Android)
 - Mimic both software and hardware of real Android devices
@@ -56,8 +55,6 @@ Understanding the difference between emulators and simulators is crucial for sel
 ---
 
 ## 🧩 3. What to Test in Mobile Apps
-
-Comprehensive mobile testing should cover a wide range of functional and non-functional areas.
 
 ### 🔧 1. Functional and UI/UX Testing
 - **User Flow Validation:** Test end-to-end flows (e.g., registration → search → add to cart → checkout).
@@ -94,8 +91,6 @@ Comprehensive mobile testing should cover a wide range of functional and non-fun
 
 ## 🔍 4. Using Charles Proxy for Mobile App Testing
 
-**Charles Proxy** is a powerful tool for inspecting network traffic between the mobile app and backend servers.
-
 ### 🛠 Setup Steps:
 1. **Install Charles Proxy** on your desktop: [https://www.charlesproxy.com/](https://www.charlesproxy.com/)
 2. Connect your mobile device and desktop to the **same WiFi network**
@@ -106,7 +101,7 @@ Comprehensive mobile testing should cover a wide range of functional and non-fun
    - Port: 8888
 5. Trust Charles SSL certificate:
    - On desktop: `Help → SSL Proxying → Install Charles Root Certificate`
-   - On mobile: Open `http://charlesproxy.com/getssl` in browser and install the certificate (needed for HTTPS)
+   - On mobile: Open `[http://charlesproxy.com/getssl](http://chls.pro/ssl)` in browser and install the certificate (needed for HTTPS)
 
 ### 🔍 What You Can Do:
 
@@ -130,15 +125,11 @@ Comprehensive mobile testing should cover a wide range of functional and non-fun
 
 #### 4. SSL Proxying (HTTPS Decryption)
 - Decrypt and inspect HTTPS traffic using Charles's root certificate
-- **Essential for modern apps:** Enables visibility into secure API traffic
+- Enables visibility into secure API traffic
 
 #### 5. Map Remote and Rewrite Tools
 - **Map Remote:** Redirect traffic to a staging/dev server without modifying the app
 - **Rewrite Tool:** Automatically modify headers, query parameters, or response data
-
-### ⚠️ Security Reminder:
-- Never use Charles Proxy on public networks
-- Remove the certificate after testing for security reasons
 
 ---
 
