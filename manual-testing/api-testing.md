@@ -13,12 +13,6 @@ The **POISED** principle is a guideline for conducting thorough API testing. It 
   - Latency and throughput
   - Scalability and resource usage
 
-- **Tools:**
-  - Postman (for basic performance)
-  - JMeter, k6, Gatling (for advanced load testing)
-
-- **Goal:** Ensure the API performs reliably under expected conditions.
-
 ---
 
 ## 🅾️ O — Output
@@ -28,8 +22,6 @@ The **POISED** principle is a guideline for conducting thorough API testing. It 
   - Schema and data format (e.g., JSON, XML)
   - Content completeness and field validation
 
-- **Goal:** Verify that API responses contain valid and expected data.
-
 ---
 
 ## 🇮 I — Interoperability
@@ -38,19 +30,15 @@ The **POISED** principle is a guideline for conducting thorough API testing. It 
   - Cross-platform compatibility (web, mobile, 3rd party)
   - Standard compliance (RESTful conventions, MIME types)
 
-- **Goal:** Confirm that the API works across various platforms and systems.
-
 ---
 
 ## 🇸 S — Security
 
 - **What to Check:**
-  - Authentication (e.g., API key, OAuth)
+  - Authentication (API key, OAuth)
   - Authorization (user roles, permissions)
   - HTTPS usage and data encryption
   - Input validation to prevent injection attacks
-
-- **Goal:** Ensure API access and data are protected against misuse.
 
 ---
 
@@ -61,8 +49,6 @@ The **POISED** principle is a guideline for conducting thorough API testing. It 
   - Clear and helpful error messages
   - Graceful degradation and fallback logic
 
-- **Goal:** Help users and developers understand and recover from errors.
-
 ---
 
 ## 🇩 D — Data Integrity
@@ -71,8 +57,6 @@ The **POISED** principle is a guideline for conducting thorough API testing. It 
   - Correct execution of CRUD operations
   - Data consistency across endpoints
   - Validations on data creation and updates
-
-- **Goal:** Maintain accurate, reliable, and synchronized data.
 
 ---
 
@@ -88,8 +72,6 @@ The **POISED** principle is a guideline for conducting thorough API testing. It 
 | D      | Data Integrity    | CRUD validity, consistency, sync              |
 
 ---
-
-> Use the **POISED** principle as a checklist to ensure your API is fast, reliable, secure, and robust in all scenarios.
 
 # 🔍 API Testing Plan: GET /api/users/{userId}
 
