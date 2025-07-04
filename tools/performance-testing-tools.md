@@ -1,3 +1,0 @@
-# Performance Testing Tools
-
-- JMeter: versatile load testing...

@@ -1,3 +1,0 @@
-# Test Management Tools
-
-- TestRail: structured test plans...
