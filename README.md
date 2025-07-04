@@ -55,6 +55,16 @@ An overview of best practices for mobile app testing, including
 ```
 ---
 
+### 🧱 testing_pyramid.md
+```markdown
+
+# Testing Pyramid: Strategy and Implementation
+- Testing Pyramid fundamental test automation strategy
+- how to effectively implement it in modern development projects
+
+```
+---
+
 ### 🐞 bug-reporting.md
 ```markdown
 # Bug Reporting Best Practices
