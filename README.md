@@ -65,6 +65,26 @@ An overview of best practices for mobile app testing, including
 ```
 ---
 
+### 📐 selenium-best-practices.md
+```markdown
+
+# Selenium Testing
+- Best Practices
+- Page Object Model (POM)
+
+```
+---
+
+### 📐 ci-cd-integration.md
+```markdown
+
+# CI/CD Integration with GitHub Actions
+- Creating a Workflow File
+- Best Practices
+
+```
+---
+
 ### 🐞 bug-reporting.md
 ```markdown
 # Bug Reporting Best Practices
