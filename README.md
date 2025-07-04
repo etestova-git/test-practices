@@ -18,7 +18,18 @@
 - Validate contrast ratios and ARIA labels
 - Use tools like axe, Lighthouse, WAVE
 ```
+---
 
+### 📱 mobile-testing.md
+```markdown
+# Mobile Testing
+
+An overview of best practices for mobile app testing, including
+- device selection, 
+- the role of emulators and simulators, 
+- core testing areas, 
+- and using Charles Proxy.
+```
 ---
 
 ### 🌐 api-testing.md
