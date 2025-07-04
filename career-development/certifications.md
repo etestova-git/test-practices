@@ -1,3 +1,0 @@
-# QA Certifications
-
-- ISTQB Foundation / Advanced...
