@@ -6,31 +6,6 @@
 - Manual Testing
 - Automation Testing
 - Defect Management
-- Recommended Tools
-- Career Development
-
-### 🧪 test-case-design.md
-```markdown
-# Test Case Design Best Practices
-
-- Use clear and consistent test case titles
-- Follow Given/When/Then format for clarity
-- Include prerequisites and test data
-- Define expected results for each step
-- Link to user stories or requirements when possible
-```
-
----
-
-### 🔍 exploratory-testing.md
-```markdown
-# Exploratory Testing
-
-- Use time-boxed exploratory sessions
-- Define a charter for each session
-- Take notes or record the session for traceability
-- Categorize findings: bugs, usability issues, questions
-```
 
 ---
 
@@ -70,17 +45,6 @@
 
 ---
 
-### 🚨 severity-vs-priority.md
-```markdown
-# Severity vs Priority
-
-- **Severity**: impact on system functionality (e.g., blocker, critical)
-- **Priority**: urgency from business/user perspective (e.g., high, medium, low)
-- Use both to guide triage and planning
-```
-
----
-
 ### 🧩 triage-process.md
 ```markdown
 # Bug Triage Process
@@ -92,59 +56,3 @@
 ```
 
 ---
-
-### 🧰 test-management-tools.md
-```markdown
-# Test Management Tools
-
-- TestRail: structured test plans and reporting
-- Zephyr: JIRA integration for test cycles
-- Xray: rich support for manual and automated test cases
-```
-
----
-
-### 🌍 browser-automation-tools.md
-```markdown
-# Browser Automation Tools
-
-- Selenium WebDriver: cross-browser automation
-- Playwright: modern multi-browser support
-- Cypress: fast and intuitive for JavaScript apps
-```
-
----
-
-### 🚀 performance-testing-tools.md
-```markdown
-# Performance Testing Tools
-
-- JMeter: versatile load testing with UI
-- k6: modern scriptable load testing
-- Locust: scalable Python-based load testing
-```
-
----
-
-### 📈 qa-career-paths.md
-```markdown
-# QA Career Paths
-
-- Manual QA Engineer
-- Automation QA Engineer
-- Senior QA / Test Lead
-- SDET (Software Developer in Test)
-- QA Manager / Head of QA
-```
-
----
-
-### 🏅 certifications.md
-```markdown
-# QA Certifications
-
-- ISTQB Foundation / Advanced
-- Certified Agile Tester (CAT)
-- CPACC / WAS (Accessibility)
-- Selenium / PlayWright specific courses (Udemy, Test Automation University)
-```
