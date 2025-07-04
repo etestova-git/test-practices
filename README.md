@@ -49,7 +49,7 @@ An overview of best practices for mobile app testing, including
 
 # Test Analysis and Test Design
 
-- difference
+- the difference between Test Analysis and Test Design
 - tools and best practices
 
 ```
@@ -59,6 +59,7 @@ An overview of best practices for mobile app testing, including
 ```markdown
 
 # Testing Pyramid: Strategy and Implementation
+
 - Testing Pyramid fundamental test automation strategy
 - how to effectively implement it in modern development projects
 
@@ -69,6 +70,7 @@ An overview of best practices for mobile app testing, including
 ```markdown
 
 # Selenium Testing
+
 - Best Practices
 - Page Object Model (POM)
 
@@ -79,6 +81,7 @@ An overview of best practices for mobile app testing, including
 ```markdown
 
 # CI/CD Integration with GitHub Actions
+
 - Creating a Workflow File
 - Best Practices
 
