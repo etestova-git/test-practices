@@ -1,37 +1,27 @@
 
-# 📈 How to Increase Release Frequency: From 1 in 3 Months to 1 in 2 Weeks
-
-Improving release frequency from **quarterly** to **biweekly** is a significant but achievable shift. It requires aligning **quality assurance**, **automation**, and **CI/CD** best practices. This guide outlines actionable steps, tools, and strategies based on QA and DevOps principles.
-
----
-
-## 🎯 Goals
-
-- Deliver value to users faster
-- Minimize release risk and manual effort
-- Improve product quality and team efficiency
+# 📈 How We Increase Release Frequency: From 1 in 3 Months to 1 in 2 Weeks
 
 ---
 
 ## 🧪 1. QA Process Improvements
 
-### ✅ Shift QA Left
+### Shift-Left QA
 
-- Involve QA early in requirements and design discussions
-- Pair QA with developers during planning and development
-- Review acceptance criteria before coding starts
+- QA participated in requirements and design discussions.
+- QA participated throughout the software development lifecycle (SDLC).
+- Developed and reviewed acceptance criteria before coding began.
 
-### ✅ Use Risk-Based Testing
+### Testcases selection
 
-- Prioritize test cases based on impact and usage
-- Focus manual effort on high-risk and critical paths
+- We prioritized test cases based on their impact and usage, with a focus on automating high-priority cases. 
+- Manual work was focused on high-risk and critical paths.
 
-### ✅ Establish a Clear Definition of Done
+### Definition of Done for Every New Feature
 
-- Automated tests written and passed
-- Manual exploratory tests completed (if needed)
-- Regression testing done automatically
-- Code reviewed and merged to main branch
+- Automated tests for high-priority cases written and passed
+- Manual exploratory tests completed
+- Regression testing done (by auto tests)
+- Code reviewed and merged to the release branch
 
 ---
 
