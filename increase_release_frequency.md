@@ -3,7 +3,7 @@
 
 ---
 
-## 🧪 1. QA Process Improvements
+## 1. QA Process Improvements
 
 ### Shift-Left QA
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 🤖 2. Test Automation Strategy
+## 2. Test Automation Strategy
 
 ### Full Test Automation
 
@@ -47,64 +47,41 @@ Strict rule: all high-priority test cases of new features must be autometed
 
 ---
 
-## CI/CD Pipeline Optimization
+## 3. CI/CD Pipeline Optimization
 
-### ✅ Implement CI/CD Tools
+### CI/CD Tools
 
-- Use **Jenkins**, **GitHub Actions**, **GitLab CI**, or **TeamCity**
-- Trigger builds on pull requests and merges
-- Run automated tests in each pipeline stage
+- Used **TeamCity**
+- Triggered builds on every pull requests and merges
+- Run automated tests for every pull request
+- No need for cleaning after test run
 
-### ✅ Use Build Stages
+### Build Stages and Environment
 
-```
-Build → Unit Tests → API/UI Tests → Deployment to Staging → Smoke Tests → Approval → Production
-```
+- Test environment created for every pull request
+- Build → Unit Tests → API → Create Environment and Deploy → UI Tests (High Priority) → Approval → Merge
 
-### ✅ Enable Parallel Test Execution
+### Parallel Test Execution Used
 
-- Split test suites by tags or components
-- Use cloud-based test runners (e.g., Sauce Labs, BrowserStack)
-
-### ✅ Integrate Quality Gates
-
-- Fail builds on test failures or low code coverage
-- Use tools like **SonarQube** for static analysis
+- Split test suites by components
+- Used Selenide test runner
 
 ---
 
-## 📦 4. Environment and Data Management
-
-### ✅ Use Stable Test Environments
-
-- Keep staging environments consistent with production
-- Automate infrastructure provisioning (e.g., with Terraform)
-
-### ✅ Automate Test Data Management
-
-- Use factories or API setups instead of UI
-- Clean up test data after runs
-
----
 
 ## 🔁 5. Release Process Transformation
 
-### ✅ Adopt Trunk-Based Development
+### Adopt Trunk-Based Development
 
-- Merge small, frequent changes to `main`
-- Use feature toggles to deploy incomplete features safely
+- Merged small, frequent changes to `main`
+- Used feature toggles to deploy incomplete features safely
 
-### ✅ Create a Release Checklist
+### Create a Release Checklist
 
 - Automated test suite status
 - Manual exploratory test confirmation
 - Changelog review
 - Rollback plan
-
-### ✅ Automate Release Creation
-
-- Auto-generate release notes from PRs
-- Tag releases from CI/CD
 
 ---
 
