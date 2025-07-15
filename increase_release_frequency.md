@@ -56,10 +56,14 @@ Strict rule: all high-priority test cases of new features must be autometed
 - Run automated tests for every pull request
 - No need for cleaning after test run
 
-### Build Stages and Environment
+### Build Stages and Environments
 
 - Test environment created for every pull request
-- Build → Unit Tests → API → Create Environment and Deploy → UI Tests (High Priority) → Approval → Merge
+- Build → Unit Tests → Integration/API → Create Environment and Deploy → Smoke -> UI (High-Priority) → Approval → Merge
+
+- Pre-Prod environment created for every release
+- Create Environment and Deploy → UI (High-Priority) → Regress → Approval 
+
 
 ### Parallel Test Execution Used
 
@@ -85,16 +89,16 @@ Strict rule: all high-priority test cases of new features must be autometed
 
 ---
 
-## 👥 6. Team Collaboration
+## 6. Team Collaboration
 
-### ✅ Improve Communication
+### Communication
 
-- Use release dashboards
-- Post status updates in Slack/Teams
+- Used release dashboards
+- Post status updates in Slack
 
-### ✅ Cross-Functional Reviews
+### Cross-Functional Reviews
 
-- QA, Dev, Product, and Ops sign off together
+- QA, Dev, Product, and DevOps sign off together
 - Retrospectives after each release to refine process
 
 ---
