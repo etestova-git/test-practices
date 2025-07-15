@@ -1,5 +1,5 @@
 
-# 📈 How We Increase Release Frequency: From 1 in 3 Months to 1 in 2 Weeks
+# 📈 How We Increase Release Frequency: From 1 in 3 Months to 1 in 2 Weeks Without Loss of Quality
 
 ---
 
@@ -27,25 +27,27 @@
 
 ## 🤖 2. Test Automation Strategy
 
-### ✅ Automate the Right Tests
+### Full Test Automation
 
-| Type | Recommendation |
+Strict rule: all high-priority test cases of new features must be autometed
+
+| Type | Running |
 |------|----------------|
 | **Unit Tests** | High coverage, run on every commit |
-| **API Tests** | Automate critical endpoints using Postman, REST Assured, etc. |
-| **UI Tests** | Automate only stable and high-value scenarios using tools like Selenium, Cypress, Playwright |
-| **Smoke Tests** | Lightweight automated tests for each deploy |
-| **Regression Tests** | Include critical flows in nightly builds |
+| **API Tests** | Automate critical endpoints (Postman) |
+| **UI Tests** | Automate at least high-priority scenarios (Selenium, Cucumber, C#) |
+| **Smoke Tests** | Automated tests for each deploy |
+| **Regression Tests** | Everyday and on-demund runs |
 
-### ✅ Organize Test Suites by Speed & Purpose
+### Test Runs
 
-- Fast unit and smoke tests for pre-merge
-- UI + integration for nightly runs
+- Unit and smoke tests for every pre-merge
+- UI + integration for everyday and on-demund runs
 - Full regression before production releases
 
 ---
 
-## 🚀 3. CI/CD Pipeline Optimization
+## CI/CD Pipeline Optimization
 
 ### ✅ Implement CI/CD Tools
 
@@ -120,28 +122,3 @@ Build → Unit Tests → API/UI Tests → Deployment to Staging → Smoke Tests 
 
 ---
 
-## 🧠 Summary: Key Success Factors
-
-| Area            | Must-Have Practice                          |
-|-----------------|---------------------------------------------|
-| Testing         | High-value test automation & fast feedback  |
-| QA              | Early involvement and risk-based testing    |
-| CI/CD           | Fast, stable, and parallelizable pipelines  |
-| Releases        | Repeatable, checklist-driven, and automated |
-| Culture         | Collaboration, feedback, and ownership      |
-
----
-
-## ✅ Tools You Might Use
-
-| Category     | Tools                                 |
-|--------------|----------------------------------------|
-| CI/CD        | GitHub Actions, GitLab CI, Jenkins     |
-| Test Automation | Cypress, Playwright, Selenium, Postman |
-| Quality Gates| SonarQube, ESLint, Prettier            |
-| Monitoring   | Sentry, Datadog                        |
-| Collaboration| Slack, Jira, Confluence                |
-
----
-
-> With a clear QA strategy, effective automation, and streamlined CI/CD, moving from a 3-month cycle to 2 weeks can be not only achievable — but sustainable and efficient.
