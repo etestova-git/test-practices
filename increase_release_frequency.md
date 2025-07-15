@@ -41,8 +41,8 @@ Strict rule: all high-priority test cases of new features must be autometed
 
 ### Test Runs
 
-- Unit and smoke tests for every pre-merge
-- UI + integration for everyday and on-demund runs
+- Unit, Integration, Smoke and UI (High-Priority) tests for every pre-merge
+- UI for everyday and on-demund runs
 - Full regression before production releases
 
 ---
