@@ -111,3 +111,15 @@ An overview of best practices for mobile app testing, including
 ```
 
 ---
+
+
+### increase_release_frequency.md
+```markdown
+# How We Increase Release Frequency: From 1 in 3 Months to 1 in 2 Weeks Without Loss of Quality
+
+- Improved processes
+- CI/CD and Environments
+- Test automation
+
+```
+---
