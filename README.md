@@ -123,3 +123,16 @@ An overview of best practices for mobile app testing, including
 
 ```
 ---
+
+
+### releases-without-testers.md
+```markdown
+# How to release without testers
+
+- Actual Test suits
+- Test automation
+- Monitoring, Alerts
+...
+
+```
+---
