@@ -38,7 +38,7 @@
 - **Keyboard navigation**: Can all actions be completed using only the keyboard?
 - **Focus management**: Does the focus move logically between UI elements?
 - **Color contrast**: Text should have a contrast ratio of at least 4.5:1.
-- **Labels & roles**: Ensure buttons, links, and inputs have accessible labels and ARIA roles.
+- **Labels & roles**: Ensure buttons, links, and inputs have accessible labels and ARIA (Accessible Rich Internet Applications) roles.
 - **Alt text**: Images must have meaningful `alt` text.
 - **Form validation**: Error messages should be announced clearly to assistive tech.
 
