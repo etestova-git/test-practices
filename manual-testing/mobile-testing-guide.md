@@ -56,30 +56,98 @@ and using Charles Proxy.
 
 ## 🧩 3. What to Test in Mobile Apps
 
-### 🔧 1. Functional and UI/UX Testing
-- **User Flow Validation:** Test end-to-end flows (e.g., registration → search → add to cart → checkout).
-- **UI Element Interaction:** Verify all UI elements (buttons, toggles, inputs) are responsive.
-- **Gesture Testing:** Validate tap, double-tap, long press, swipe (all directions), pinch-to-zoom.
-- **Platform Consistency:** Ensure the app aligns with iOS Human Interface Guidelines and Android Material Design principles.
+### ✅ 1. Functional Testing
+- Ensure the app behaves as expected.
+- Navigation between screens
+- Input field validation
+- Button actions and links
+- Business logic (e.g., calculations, workflows)
+- API responses and error handling
+- File uploads/downloads
+- Push notifications behavior
 
-### 🔄 2. Interruption and Connectivity Testing
-- **Interruption Scenarios:**
-  - App behavior during phone calls, texts, and notifications
-  - Impact of plugging/unplugging the charger
-- **Network Testing:**
-  - **Offline Mode:** App stability and messaging with no internet
-  - **Throttling:** Use Charles Proxy or developer tools to simulate 3G, weak WiFi, or flaky signals
+### ✅ 2. UI/UX Testing
 
-### 🧪 3. Non-Functional Testing
-- **Performance:**
-  - App launch time from cold start
-  - Monitor memory and CPU with Xcode Instruments and Android Profiler
-- **Battery Consumption:** Evaluate for power efficiency
-- **Security:**
-  - Secure local data storage (no plain-text tokens)
-  - Use of HTTPS for all network communication
-- **Installation/Update Checks:** Confirm clean installs, updates from older versions, and complete uninstalls
+- Verify visual consistency and usability.
+- Layouts on different screen sizes/resolutions
+- Fonts, colors, icons, spacing
+- Touch responsiveness (tap, swipe, pinch, drag)
+- Accessibility (labels, ARIA roles, screen reader compatibility)
+- Orientation changes (portrait ↔ landscape)
 
+### ✅ 3. Cross-Platform Testing
+
+- Test across different OS and device types.
+- iOS vs. Android
+- Phones vs. tablets
+- Different OS versions (e.g., Android 12, iOS 17)
+- Device-specific behaviors (camera, sensors, back button)
+
+### ✅ 4. Performance Testing
+
+- Check app speed and resource usage.
+- App launch time
+- Memory and battery consumption
+- Scrolling smoothness and frame rates
+- Response time for user actions and API calls
+- Handling large data sets or images
+
+### ✅ 5. Network Testing
+
+- Ensure proper behavior under different network conditions.
+- 3G, 4G, 5G, Wi-Fi, airplane mode
+- Handling slow or lost connections
+- Retry logic for failed requests
+- Offline mode support
+
+### ✅ 6. Security Testing
+
+- Protect user data and prevent vulnerabilities.
+- Secure login/authentication (e.g., OAuth, biometrics)
+- Data encryption (at rest and in transit)
+- No sensitive data stored in logs or cache
+- Certificate pinning, HTTPS enforcement
+- In-app permissions handling
+
+### ✅ 7. Localization Testing
+
+- Verify language and region-specific content.
+- Translations of all UI elements
+- Number/date/time/currency formats
+- Text expansion in different languages (e.g., German vs. English)
+
+### ✅ 8. Installation and Upgrade Testing
+
+- Ensure app setup and updates work smoothly.
+- First-time install
+- Update from older versions
+- Clean uninstall and reinstall
+- Handling corrupted installation
+
+### ✅ 9. Push Notification Testing
+
+- Check messaging behavior.
+- Receiving and tapping notifications
+- Foreground, background, and killed app states
+- Action buttons and deep linking
+- Opt-in/opt-out handling
+
+### ✅ 10. Crash and Recovery Testing
+
+- Ensure app stability and error recovery.
+- App doesn’t crash on invalid inputs
+- Recover gracefully from unexpected behavior
+- Logs collected for debugging
+- ANR (Application Not Responding) scenarios
+
+### 📝 Optional: Additional Areas
+
+- Battery drain in long use
+- App store compliance (Apple, Google)
+- Analytics and tracking validation
+- Third-party integrations (payment gateways, social login)
+- Accessibility compliance (for WCAG standards)
+  
 ### 🤖 4. Automation Strategy
 - **Automation Candidates:** Automate key user flows (login, main features) for regression coverage
 - **Tooling Choices:**
