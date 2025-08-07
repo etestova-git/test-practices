@@ -73,7 +73,7 @@ Strict rule: all high-priority test cases of new features must be autometed
 ---
 
 
-## 🔁 5. Release Process Transformation
+## 🔁 4. Release Process Transformation
 
 ### Adopt Trunk-Based Development
 
@@ -89,7 +89,7 @@ Strict rule: all high-priority test cases of new features must be autometed
 
 ---
 
-## 6. Team Collaboration
+## 5. Team Collaboration
 
 ### Communication
 
