@@ -85,7 +85,7 @@ Strict rule: all high-priority test cases of new features must be autometed
 - Automated test suite status
 - Manual exploratory test confirmation
 - Changelog review
-- Rollback plan
+- Rollback plan (Feture toggles, Canary releases)
 
 ---
 
