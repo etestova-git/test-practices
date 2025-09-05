@@ -201,14 +201,65 @@ and using Charles Proxy.
 
 ---
 
-## 📌 Summary
-| Topic                | Key Takeaway |
-|---------------------|--------------|
-| Device Selection     | Prioritize popular OS/device combinations |
-| Emulators/Simulators| Good for dev/debugging; real devices still essential |
-| What to Test         | Cover functional, UI, performance, and security |
-| Charles Proxy        | Inspect and manipulate network traffic easily |
+## 1. How to Test Push Notifications in Mobile Apps?
+
+Testing push notifications is important to ensure messages are delivered and displayed correctly on different devices and OS versions.
+
+### Steps:
+1. **Enable Push in the App**
+   - Make sure the app is installed and has push permissions enabled in settings.
+   - For iOS: Settings → Notifications → [Your App].
+   - For Android: Settings → Apps → Notifications.
+
+2. **Send Test Notifications**
+   - Use **Firebase Cloud Messaging (FCM)** for Android and **Apple Push Notification Service (APNs)** for iOS.
+   - Developers can also use server scripts or tools like **Postman** to trigger test pushes.
+
+3. **Check Behavior**
+   - Verify the notification arrives (foreground, background, and when the app is closed).
+   - Check text, icon, sound, and deep links (does the correct screen open?).
+   - Test on multiple OS versions and device models.
+
+4. **Edge Cases**
+   - Disabled network → notification should be queued/delayed.
+   - User denies permissions → app should handle gracefully.
+   - Multiple notifications → check grouping and stacking behavior.
 
 ---
 
-Would you like to automate tests with tools like Appium or integrate with CI/CD pipelines? Check out additional resources in this repository.
+## 2. How to Use Android Studio and Xcode for Manual Testing?
+
+Both **Android Studio** (for Android) and **Xcode** (for iOS) can be used by QA engineers to install, run, and debug apps during manual testing.
+
+### Android Studio
+1. **Set Up Emulator**
+   - Go to `Tools → Device Manager → Create Virtual Device`.
+   - Select phone model and Android version.
+   - Start the emulator.
+
+2. **Install and Run App**
+   - Load the `.apk` or project into Android Studio.
+   - Click **Run ▶️** to install on emulator or real device.
+   - Logs and errors appear in **Logcat**.
+
+3. **Testing Features**
+   - Use emulator tools: simulate calls, SMS, GPS location, battery, rotation.
+   - Capture logs for bug reporting.
+
+---
+
+### Xcode (for iOS)
+1. **Set Up Simulator**
+   - Open `Xcode → Window → Devices and Simulators`.
+   - Choose device type (iPhone, iPad) and iOS version.
+
+2. **Install and Run App**
+   - Load the `.ipa` or project into Xcode.
+   - Click **Run ▶️** to install on simulator or real iPhone (requires developer certificate).
+   - Logs appear in the **Debug console**.
+
+3. **Testing Features**
+   - Use simulator menu to simulate rotation, memory warnings, and location.
+   - For real devices: capture system logs via **Console app** or **Xcode Devices**.
+
+---
