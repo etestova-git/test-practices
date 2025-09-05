@@ -61,7 +61,7 @@
 ---
 
 ## 🔹 Testing Tools
-- [ ] Espresso tests cover main flows  
-- [ ] UI Automator tests handle system dialogs  
+- [ ] Auto tests cover main flows  
+- [ ] Auto tests handle system dialogs  
 - [ ] Logs (Logcat) are captured for failed test runs  
 - [ ] Screenshots are taken for **visual regression comparison**  
