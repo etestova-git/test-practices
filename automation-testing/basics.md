@@ -34,16 +34,27 @@ ____
 ## MAP
 array.map((element, index(*optional*), array(*optional*)) => {...})
 #### example:
-- const nums = [3, 1, 4];
-- const squared = nums.map((num) => num * num);
-- console.log(squared); // [9, 1, 16]
+```const nums = [3, 1, 4];```
 
-- const map = new Map(); - built-in JavaScript object type
-- map - method on arrays
-- map.has(smth)
-- map.set(smth) (set(key, value)) - Adds/updates an entry with key and value
-- map.get(smth)
-- delete(key)	- Removes the entry by key 
-- clear()	    - Removes all entries from the map 
-- size
+```const squared = nums.map((num) => num * num);```
+
+```console.log(squared); // [9, 1, 16]```
+
+----
+
+```const map = new Map(); - built-in JavaScript object type```
+
+```map - method on arrays```
+
+```map.has(smth)```
+
+```map.set(smth) (set(key, value)) - Adds/updates an entry with key and value```
+
+```map.get(smth)```
+
+```delete(key)	- Removes the entry by key ```
+
+```clear()	    - Removes all entries from the map```
+
+```size```
 _____
