@@ -35,6 +35,7 @@
 | `reduce()`     | Reduces array to single value               | `arr.reduce((a, b) => a + b)`|
 | `flat()`       | Flattens nested arrays                      | `[[1],[2]].flat()`           |
 | `flatMap()`    | `map()` followed by `flat()`                | `arr.flatMap(x => [x, x])`   |
+| `Array.from(iterable)` | Creates a new array from any iterable object (like Set, Map, or string)|let set = new Set([1, 2, 3]); let arr = Array.from(set); |
 
 ## 🔹 Sorting & Reordering
 | Method         | Description                                 | Example                      |
