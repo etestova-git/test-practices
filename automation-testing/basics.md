@@ -58,3 +58,33 @@ array.map((element, index(*optional*), array(*optional*)) => {...})
 
 ```size```
 _____
+
+| **Set Method**         | **Description**                                    |
+|-------------------------|----------------------------------------------------|
+| `new Set(iterable)`     | Creates a new Set                                  |
+| `add(value)`            | Adds a new element to the Set                      |
+| `delete(value)`         | Removes an element from the Set                    |
+| `has(value)`            | Checks if value exists in the Set                  |
+| `clear()`               | Removes all elements from the Set                  |
+| `size`                  | Returns the number of elements                     |
+| `forEach(callback)`     | Executes a function for each element               |
+| `values()`              | Returns an iterator of values                      |
+| `keys()`                | Same as `values()` (for compatibility)             |
+| `entries()`             | Returns iterator `[value, value]` pairs            |
+
+_____
+
+| **Math Function**      | **Description**                                    |
+|-------------------------|----------------------------------------------------|
+| `Math.abs(x)`           | Returns absolute value of `x`                      |
+| `Math.round(x)`         | Rounds `x` to nearest integer                      |
+| `Math.floor(x)`         | Rounds `x` down (toward −∞)                        |
+| `Math.ceil(x)`          | Rounds `x` up (toward +∞)                          |
+| `Math.max(...values)`   | Returns largest value                              |
+| `Math.min(...values)`   | Returns smallest value                             |
+| `Math.sqrt(x)`          | Returns square root of `x`                         |
+| `Math.pow(x, y)`        | Returns `x` to the power of `y`                    |
+| `Math.trunc(x)`         | Removes fractional part of `x`                     |
+| `Math.random()`         | Returns random number between 0 and 1              |
+
+
