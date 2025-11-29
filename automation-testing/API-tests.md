@@ -1,4 +1,4 @@
-**TC-001: GET /users — Successful retrieval**
+### **TC-001: GET /users — Successful retrieval**
 
 |  Steps: Send GET `/users`. Validate status code \= 200\. Validate list contains user objects. Validate fields: id, name, email. Expected Result: Status 200 Valid JSON Non-empty list | `import { test, expect } from "@playwright/test"; test("TC001: GET /users returns list", async ({ request }) => {   const res = await request.get("/users");   expect(res.status()).toBe(200);   const body = await res.json();   expect(Array.isArray(body)).toBe(true); });` |
 | :---- | :---- |
@@ -12,10 +12,6 @@
 
 | Steps: GET /users/999999 Expected: 404 Not Found Error message: “User not found” | `test("TC003: GET /users/{id} returns 404", async ({ request }) => {   const res = await request.get("/users/99999999");   expect(res.status()).toBe(404); });` |
 | :---- | :---- |
-
-### 
-
-### 
 
 ### **TC-004: POST /users — Create user successfully**
 
@@ -31,8 +27,6 @@
 
 | Expected: 200 OK Updated fields returned | ``test("TC006: PUT /users updates user", async ({ request }) => {   const create = await request.post("/users", {     data: { name: "Old", email: "old@test.com" },   });   const user = await create.json();   const res = await request.put(`/users/${user.id}`, {     data: { name: "Updated" },   });   expect(res.status()).toBe(200);   const body = await res.json();   expect(body.name).toBe("Updated"); });`` |
 | :---- | :---- |
-
-### 
 
 ### **TC-007: DELETE /users/{id} — Remove user**
 
@@ -69,10 +63,6 @@
 | Steps: POST invalid JSON payload Expected: 400 Bad Request | `test("TC013: Invalid JSON → 400", async ({ request }) => {   const res = await request.fetch("/users", {     method: "POST",     headers: { "Content-Type": "application/json" },     body: "{invalid-json}",   });   expect(res.status()).toBe(400); });`  |
 | :---- | :---- |
 
-### 
-
-### 
-
 ### **TC-014: Unsupported HTTP method**
 
 | Steps: PATCH an endpoint that only supports PUT Expected: 405 Method Not Allowed | `test("TC014: Unsupported HTTP method → 405", async ({ request }) => {   const res = await request.patch("/users");   expect(res.status()).toBe(405); });` |
@@ -100,7 +90,7 @@
 
 ### **TC-019: No breaking changes in schema**
 
-| Expected: No removed fieldsNo type changes | `test("TC019: Schema backwards compatibility", async ({ request }) => {   const res = await request.get("/users");   // use schema validator here   await validateSchema(res, "user.schema.json"); });` |
+| Expected: No removed fields,No type changes | `test("TC019: Schema backwards compatibility", async ({ request }) => {   const res = await request.get("/users");   // use schema validator here   await validateSchema(res, "user.schema.json"); });` |
 | :---- | :---- |
 
 **TC-020: Required fields must always exist**
